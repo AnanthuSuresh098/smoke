@@ -4,13 +4,13 @@ export const Home = () => {
   return (
     <div>
       <div id="Homepage-main-header">
-        <div>
+        <div className="Homepage-main-header-sections">
           <img src="dealers.png" alt="logo192.png" />
         </div>
-        <div>
+        <div id="Homepage-main-header-sections-smoke">
           <img src="smoke.png" alt="logo192.png" />
         </div>
-        <div>
+        <div className="Homepage-main-header-sections">
           <img src="brands.png" alt="logo192.png" />
         </div>
       </div>
@@ -48,7 +48,10 @@ export const Home = () => {
           <img src="menu.png" alt="logo192.png" />
           <div>Menu 4</div>
         </div>
-        <div className="homepage_menu_sections" id="homepage_menu_sections_arrow">
+        <div
+          className="homepage_menu_sections"
+          id="homepage_menu_sections_arrow"
+        >
           <img src="uparrow.png" alt="logo192.png" />
         </div>
       </div>

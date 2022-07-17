@@ -1,6 +1,17 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
+import { Modal } from "./Modal";
 
 export const Home = () => {
+
+const handleFocus = (e) => {
+  e.target.style.borderBottom = "1px solid #464B4E";
+};
+
+const handleBlur = (e) => {
+  e.target.style.borderBottom = "none";
+};
+
   return (
     <div>
       <div id="Homepage-main-header">
@@ -27,27 +38,62 @@ export const Home = () => {
         </div>
       </div>
 
-      <div id="homepage_menus_wrapper">
-        <div className="homepage_menu_sections">
-          <img src="all.png" alt="logo192.png" />
-          <div>All</div>
-        </div>
-        <div className="homepage_menu_sections">
-          <img src="menu.png" alt="logo192.png" />
-          <div>Menu 1</div>
-        </div>
-        <div className="homepage_menu_sections">
-          <img src="menu.png" alt="logo192.png" />
-          <div>Menu 2</div>
-        </div>
-        <div className="homepage_menu_sections">
-          <img src="menu.png" alt="logo192.png" />
-          <div>Menu 3</div>
-        </div>
-        <div className="homepage_menu_sections">
-          <img src="menu.png" alt="logo192.png" />
-          <div>Menu 4</div>
-        </div>
+      <div id="homepage_menu_wrapper">
+        <Link
+          to="/"
+          className="menu_sections_links"
+          onFocus={(e) => handleFocus(e)}
+          onBlur={(e) => handleBlur(e)}
+        >
+          <div className="homepage_menu_sections">
+            <img src="all.png" alt="logo192.png" />
+            <div>All</div>
+          </div>
+        </Link>
+        <Link
+          to="/menu_1"
+          className="menu_sections_links"
+          onFocus={(e) => handleFocus(e)}
+          onBlur={(e) => handleBlur(e)}
+        >
+          <div className="homepage_menu_sections">
+            <img src="menu.png" alt="logo192.png" />
+            <div>Menu 1</div>
+          </div>
+        </Link>
+        <Link
+          to="/menu_2"
+          className="menu_sections_links"
+          onFocus={(e) => handleFocus(e)}
+          onBlur={(e) => handleBlur(e)}
+        >
+          <div className="homepage_menu_sections">
+            <img src="menu.png" alt="logo192.png" />
+            <div>Menu 2</div>
+          </div>
+        </Link>
+        <Link
+          to="/menu_3"
+          className="menu_sections_links"
+          onFocus={(e) => handleFocus(e)}
+          onBlur={(e) => handleBlur(e)}
+        >
+          <div className="homepage_menu_sections">
+            <img src="menu.png" alt="logo192.png" />
+            <div>Menu 3</div>
+          </div>
+        </Link>
+        <Link
+          to="/menu_4"
+          className="menu_sections_links"
+          onFocus={(e) => handleFocus(e)}
+          onBlur={(e) => handleBlur(e)}
+        >
+          <div className="homepage_menu_sections">
+            <img src="menu.png" alt="logo192.png" />
+            <div>Menu 4</div>
+          </div>
+        </Link>
         <div
           className="homepage_menu_sections"
           id="homepage_menu_sections_arrow"
@@ -55,6 +101,6 @@ export const Home = () => {
           <img src="uparrow.png" alt="logo192.png" />
         </div>
       </div>
+      <Modal/>
     </div>
-  );
-};
+  );}

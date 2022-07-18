@@ -1,6 +1,5 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { Modal } from "./Modal";
 
 export const Home = () => {
 
@@ -13,7 +12,7 @@ const handleBlur = (e) => {
 };
 
   return (
-    <div>
+    <div id="main_wrapper">
       <div id="Homepage-main-header">
         <div className="Homepage-main-header-sections">
           <img src="dealers.png" alt="logo192.png" />
@@ -101,6 +100,5 @@ const handleBlur = (e) => {
           <img src="uparrow.png" alt="logo192.png" />
         </div>
       </div>
-      <Modal/>
     </div>
   );}

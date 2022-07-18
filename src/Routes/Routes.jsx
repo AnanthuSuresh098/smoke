@@ -10,11 +10,11 @@ export const Mainroutes = () => {
   return (
     <>
       <Routes>
-        {/* <Route path="/" element={<Products />} />
+        <Route path="/" element={<Products />} />
         <Route path="/menu_1" element={<Menu_1 />} />
         <Route path="/menu_2" element={<Menu_2 />} />
         <Route path="/menu_3" element={<Menu_3 />} />
-        <Route path="/menu_4" element={<Menu_4 />} />  */}
+        <Route path="/menu_4" element={<Menu_4 />} /> 
       </Routes>
     </>
   );

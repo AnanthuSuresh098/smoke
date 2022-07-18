@@ -1,7 +1,7 @@
 <br/>
-<img width="500px" src="public/ss1.png"/>
+<img width="800px" src="public/ss1.png"/>
 <br/>
 
 <br/>
-<img width="500px" src="public/ss2.png"/>
+<img width="800px" src="public/ss2.png"/>
 <br/>
